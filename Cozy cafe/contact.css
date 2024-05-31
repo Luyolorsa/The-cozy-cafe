@@ -1,0 +1,138 @@
+#contact {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+#contact nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#contact nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+#contact nav ul li {
+  margin: 0 10px;
+}
+
+#contact nav a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#contact nav a:hover {
+  background-color: #444;
+}
+
+#contact p {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+#contact form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+#contact label {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+#contact textarea {
+  height: 200px;
+}
+
+#contact input[type="file"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+#contact input[type="file"]::-webkit-file-upload-button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #444;
+}
+
+#contact button {
+  width: 100%;
+  padding: 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  #contact form label,
+  #contact form input[type="text"],
+  #contact form input[type="email"],
+  #contact form textarea,
+  #contact form input[type="file"] {
+    width: 100%;
+  }
+}

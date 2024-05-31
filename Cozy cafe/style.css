@@ -1,0 +1,118 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+header.scrolled {
+  background-color: rgba(51, 51, 51, 0.9);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+main {
+  padding: 5% 10%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#home h2 {
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-in-out both;
+}
+
+#home p {
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  animation: fadeInUp 1s ease-in-out 0.2s both;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 5%;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out 0.4s both;
+}
+
+footer p {
+  margin: 0;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
